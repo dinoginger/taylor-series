@@ -47,7 +47,7 @@ def taylor_series(n_value: int, argument: float) -> None:
             ax.plot(x, y, label="Accuracy < 0.001", lw=4)
             passed2 = True
         elif not passed3 and abs(result - math.sin(4 * arg_radians) ** 2) < 10**(-6):
-            print(f"Accuracy is < 0.1 on n = {n}")
+            print(f"Accuracy is < 0.000001 on n = {n}")
             ax.plot(x, y, label="Accuracy < 0.000001", lw=4)
             passed3 = True
 
